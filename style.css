@@ -8,23 +8,26 @@ body {
   margin-top: 2rem;
 }
 .product {
-  width: 300px;
+  width: 200px;
 }
 .div_img {
   width: 100%;
   height: 200px;
   background-color: #e4e4e5;
   position: relative;
+  margin-bottom: 0.8rem;
 }
 .product_img {
   position: absolute;
-  height: 100%;
+  height: 90%;
+  width: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .description {
   font-size: small;
+  height: 60px;
 }
 .div_buy {
   display: flex;
@@ -33,11 +36,11 @@ body {
   margin-top: 0.8rem;
 }
 .btn_buy {
-  height: 35px;
+  height: 30px;
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: large;
+  font-size: small;
   font-weight: 600;
   border: 1px solid red;
   border-radius: 0.5rem;
@@ -46,8 +49,52 @@ body {
   background-color: red;
 }
 .icon_buy {
-  height: 25px;
+  height: 20px;
 }
 .favorite_icon {
   height: 30px;
+}
+.blog {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.blog-left {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+.blog-left-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.blog_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.div_for {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.left_div_img {
+  width: 200px;
+  height: 200px;
+  background-color: #e4e4e5;
+  margin-bottom: 0.8rem;
+  margin-bottom: 0;
+  position: relative;
 }
