@@ -1,32 +1,32 @@
 body {
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 .products {
+  width: 100%;
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
 }
 .product {
-  width: 200px;
-}
-.div_img {
-  width: 100%;
-  height: 200px;
-  background-color: #e4e4e5;
-  position: relative;
-  margin-bottom: 0.8rem;
+  max-width: 200px;
+  width: 24%;
 }
 .product_img {
-  position: absolute;
-  height: 90%;
-  width: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+.product_title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  height: 20px;
 }
 .description {
-  font-size: small;
+  font-size: 10px;
   height: 60px;
 }
 .div_buy {
@@ -34,6 +34,16 @@ body {
   align-items: center;
   gap: 0.5rem;
   margin-top: 0.8rem;
+}
+.btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.3rem;
+}
+span {
+  font-size: 10px;
+  font-weight: 600;
 }
 .btn_buy {
   height: 30px;
@@ -45,56 +55,40 @@ body {
   border: 1px solid red;
   border-radius: 0.5rem;
 }
-.btn_buy:hover {
-  background-color: red;
-}
-.icon_buy {
-  height: 20px;
-}
-.favorite_icon {
-  height: 30px;
-}
-.blog {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin: 2rem 0;
-}
-.blog-left {
-  width: 50%;
-  height: auto;
-  position: relative;
-}
 .blog-left-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.blog_right {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
+  max-width: 400px;
+  height: auto;
 }
 .div_for {
   width: 200px;
   height: 200px;
-  background-color: #000;
-  color: #fff;
-  margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0;
 }
-.left_div_img {
-  width: 200px;
-  height: 200px;
-  background-color: #e4e4e5;
-  margin-bottom: 0.8rem;
-  margin-bottom: 0;
-  position: relative;
+.newsletter {
+  background-color: #e8e8e8;
+  height: 400px;
+}
+@media screen and (max-width: 540px) {
+  .products {
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 45%;
+  }
+  .product_title {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 541px) {
+  .products {
+    flex-wrap: nowrap;
+  }
+  .product_img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
