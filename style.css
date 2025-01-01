@@ -78,27 +78,6 @@ span {
   font-size: 10px;
   font-weight: 600;
 }
-.btn_buy {
-  height: 30px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: small;
-  font-weight: 600;
-  border: 1px solid red;
-  border-radius: 0.5rem;
-}
-.blog-left-img {
-  max-width: 400px;
-  height: auto;
-}
-.div_for {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .newsletter {
   width: 100%;
   position: relative;
@@ -202,6 +181,7 @@ footer {
   gap: 1rem;
   margin-top: 1rem;
 }
+/* ces class sont appliquées aux tailles d'écran en <= 540px */
 @media screen and (max-width: 540px) {
   .products {
     flex-wrap: wrap;
@@ -244,7 +224,7 @@ footer {
     align-items: center;
   }
 }
-
+/* ces class sont appliquées aux tailles d'écran en >= 541px */
 @media screen and (min-width: 541px) {
   .products {
     flex-wrap: nowrap;
@@ -256,7 +236,7 @@ footer {
     max-height: 100%;
   }
 }
-
+/* ces class sont appliquées aux tailles d'écran en <= 654px */
 @media screen and (max-width: 654px) {
   .contacts {
     flex-direction: column;
